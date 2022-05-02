@@ -45,7 +45,7 @@ void Task2()
 	for (int i = 0; i <= word.size(); i++)
 	{
 		sentence += word[i];
-		if (word[i] == '.')
+		if (word[i] == '.' || word[i] == '?' || word[i] == '!')
 		{
 			text.insert(Text(sentence));
 			sentence = "";
